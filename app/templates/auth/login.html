@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% set title = "Login" %}
+{% block content %}
+<div class="crm-card card shadow-sm">
+  <div class="card-body">
+    <h2 class="h5 mb-3">Login</h2>
+    <form method="post" class="d-grid gap-3">
+      <div>
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" id="email" name="email" type="email" required>
+      </div>
+      <div>
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" id="password" name="password" type="password" required>
+      </div>
+      <button class="btn btn-primary" type="submit">Sign in</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

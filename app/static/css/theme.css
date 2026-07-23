@@ -1,0 +1,54 @@
+:root {
+  --crm-bg: #f4f7fb;
+  --crm-surface: #dce6f3;
+  --crm-accent: #2f6fed;
+  --crm-text: #16324f;
+  --crm-ink: #0f1f33;
+}
+
+body.crm-shell {
+  background: var(--crm-bg);
+  color: var(--crm-text);
+}
+
+.crm-sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: var(--crm-surface);
+  color: var(--crm-ink);
+  padding: 1rem;
+  border-right: 1px solid #c9d7ea;
+}
+
+.crm-brand {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.crm-header {
+  background: var(--crm-surface);
+  border-bottom: 1px solid #e7ecf3;
+  padding: 1rem 1.25rem;
+}
+
+.crm-card {
+  border: 0;
+  background: var(--crm-surface);
+}
+
+.nav-link {
+  color: var(--crm-ink);
+  border-radius: 0.75rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: rgba(47, 111, 237, 0.12);
+  color: var(--crm-ink);
+}
+
+.btn-primary {
+  background: var(--crm-accent);
+  border-color: var(--crm-accent);
+}
