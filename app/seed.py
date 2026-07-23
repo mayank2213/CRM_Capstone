@@ -1,10 +1,15 @@
 from decimal import Decimal
 
+from sqlalchemy import inspect
+
 from .extensions import db
 from .models import Company, Contact, Deal, PipelineStage, User
 
 
 def seed_demo_data():
+    if not inspect(db.engine).has_table("users"):
+        db.create_all()
+
     if User.query.first():
         return
 
@@ -53,4 +58,3 @@ def seed_demo_data():
 
     db.session.add_all([company, contact, deal])
     db.session.commit()
-

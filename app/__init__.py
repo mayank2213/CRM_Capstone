@@ -34,7 +34,6 @@ def create_app(config_object: type[Config] | None = None) -> Flask:
     @app.cli.command("seed-demo")
     def seed_demo_command():
         """Seed demo data for the capstone dataset."""
-        db.create_all()
         seed_demo_data()
 
     @app.cli.command("init-db")
